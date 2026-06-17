@@ -472,6 +472,22 @@ jay-trivedi/amazon_sp_mcp 读自己 Amazon 店铺
 
 **栈**:amazon_sp_mcp + 1688-cli + 飞书机器人。~120 行。
 
+### 配方 11 — 闲鱼虚拟资料网盘发货检查
+
+```
+闲鱼虚拟资料订单
+    │
+    ├──► xianyu-netdisk-delivery-checker:
+    │       ├──► 检查链接、提取码、权限和有效期
+    │       ├──► 核对文件清单、版本号和打开方式
+    │       ├──► 生成买家网盘说明
+    │       └──► 生成售后边界和订单记录字段
+    ├──► 平台聊天内发送交付说明
+    └──► 订单表记录: 成交价 / 平台费 / 资料成本 / 售后问题 / 退款原因
+```
+
+**栈**:[xianyu-netdisk-delivery-checker](https://github.com/Ronnie2025/xianyu-netdisk-delivery-checker) + Markdown 清单 + CSV/Excel 订单表。浏览器端运行,MIT,适合闲鱼模板、教程、Excel、PPT、提示词资料包等低价虚拟资料卖家。
+
 ---
 
 ## 贡献指南
