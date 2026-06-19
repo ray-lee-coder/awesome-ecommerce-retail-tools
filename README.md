@@ -472,6 +472,24 @@ jay-trivedi/amazon_sp_mcp 读自己 Amazon 店铺
 
 **栈**:amazon_sp_mcp + 1688-cli + 飞书机器人。~120 行。
 
+### 配方 11 — 闲鱼虚拟资料买家咨询复盘
+
+```
+闲鱼虚拟资料/模板/教程在售商品
+    │
+    ├──► 买家咨询进入聊天:
+    │       ├──► "太贵了" → 生成价值解释 + 低承诺回复
+    │       ├──► "能包效果吗" → 生成边界说明 + 退款口径
+    │       ├──► "先看样品" → 生成样张交付和防白嫖回复
+    │       └──► "能不能代做" → 生成拒绝代做或加价口径
+    ├──► 每条咨询沉淀成 Excel 字段:
+    │       买家问题 / 回复类型 / 是否成交 / 阻塞点 / 下一步改标题或详情
+    └──► 每周复盘:
+            高频问题 → 改商品标题、详情页、样张和售后边界
+```
+
+**栈**:[xianyu-buyer-inquiry-log-generator](https://github.com/Ronnie2025/xianyu-buyer-inquiry-log-generator) + [浏览器端工具](https://ronnie2025.github.io/xianyu-buyer-inquiry-log-generator/) + CSV/Excel 订单复盘表。MIT,适合闲鱼资料包、Excel 模板、Prompt 包、教程和工作流卖家在成交前把聊天问题沉淀成可搜索标题、详情页 FAQ 和售后边界。
+
 ---
 
 ## 贡献指南
